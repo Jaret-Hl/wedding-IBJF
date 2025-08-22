@@ -174,3 +174,55 @@ h2 {
     font-size: 1.2rem;
   }
 }
+
+.scroll-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  padding: 1rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.polaroid-frame {
+  flex: 0 0 auto;
+  width: 180px;
+  height: 260px;
+  background-color: white;
+  padding: 10px 10px 20px 10px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  scroll-snap-align: start;
+  border-radius: 6px;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.mini-carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: sepia(0.4) contrast(1.05) brightness(0.95);
+  border-radius: 4px;
+}
+
+.scroll-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.swipe-hint {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #8a6c54;
+  margin-top: 0.5rem;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
