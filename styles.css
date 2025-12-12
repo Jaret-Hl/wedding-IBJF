@@ -226,3 +226,17 @@ h2 {
     opacity: 1;
   }
 }
+
+/* Estilo sugerido para la frase icónica */
+.iconic-message {
+  font-family: 'Dancing Script', cursive; /* Usa una de tus fuentes bonitas */
+  font-size: 2em;
+  color: #8b0000; /* Un color de acento, por ejemplo, rojo oscuro */
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border: 2px solid #8b0000;
+  border-radius: 5px;
+  background-color: #fffafa; /* Fondo claro para contraste */
+}
